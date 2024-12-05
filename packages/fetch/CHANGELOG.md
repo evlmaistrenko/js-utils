@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/evlmaistrenko/js-utils/compare/utils-fetch-v1.0.1...utils-fetch-v1.0.2) (2024-12-05)
+
+
+### Bug Fixes
+
+* dependencies fixed ([4d492ae](https://github.com/evlmaistrenko/js-utils/commit/4d492aeadb27b83e8ca024695e9fc7500751084b))
+
 ## [1.0.1](https://github.com/evlmaistrenko/js-utils/compare/utils-fetch-v1.0.0...utils-fetch-v1.0.1) (2024-12-05)
 
 
