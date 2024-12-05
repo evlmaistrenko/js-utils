@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/evlmaistrenko/js-utils/compare/utils-v1.0.3...utils-v1.0.4) (2024-12-05)
+
+
+### Bug Fixes
+
+* externals excluded from docs ([e96bd2d](https://github.com/evlmaistrenko/js-utils/commit/e96bd2d2159e70bda7d6da91899475914e514ef8))
+
 ## [1.0.3](https://github.com/evlmaistrenko/js-utils/compare/utils-v1.0.2...utils-v1.0.3) (2024-12-05)
 
 
