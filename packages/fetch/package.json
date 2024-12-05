@@ -1,0 +1,24 @@
+{
+	"name": "@evlmaistrenko/utils-fetch",
+	"version": "1.0.1",
+	"description": "Utilities for FetchAPI",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"docs": "typedoc",
+		"pretest": "npm run build",
+		"test": "node --test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/evlmaistrenko/js-utils.git"
+	},
+	"keywords": ["fetch", "fetchApi", "fetch-error", "response-error"],
+	"author": "evlmaistrenko <evlmaistrenko@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/evlmaistrenko/js-utils/issues"
+	},
+	"homepage": "https://github.com/evlmaistrenko/js-utils/blob/master/packages/fetch/README.md",
+	"type": "module"
+}

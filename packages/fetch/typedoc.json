@@ -1,0 +1,6 @@
+{
+	"plugin": ["typedoc-plugin-markdown"],
+	"out": "./docs",
+	"readme": "none",
+	"entryPoints": ["./src/index.ts"]
+}
