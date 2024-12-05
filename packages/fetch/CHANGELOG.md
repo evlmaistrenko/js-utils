@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/evlmaistrenko/js-utils/compare/utils-fetch-v1.0.2...utils-fetch-v1.0.3) (2024-12-05)
+
+
+### Bug Fixes
+
+* husky command not found fixed ([695fbf6](https://github.com/evlmaistrenko/js-utils/commit/695fbf62341b2bf72fc91414f9add876d4413dc0))
+
 ## [1.0.2](https://github.com/evlmaistrenko/js-utils/compare/utils-fetch-v1.0.1...utils-fetch-v1.0.2) (2024-12-05)
 
 
