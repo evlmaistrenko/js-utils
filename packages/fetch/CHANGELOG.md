@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/evlmaistrenko/js-utils/compare/utils-fetch-v1.0.4...utils-fetch-v1.1.0) (2024-12-05)
+
+
+### Features
+
+* statistical badges added to docs ([#8](https://github.com/evlmaistrenko/js-utils/issues/8)) ([1ab4cc7](https://github.com/evlmaistrenko/js-utils/commit/1ab4cc7b8988571e3bb6a8dabccfecbfd60196ba))
+
 ## [1.0.4](https://github.com/evlmaistrenko/js-utils/compare/utils-fetch-v1.0.3...utils-fetch-v1.0.4) (2024-12-05)
 
 
