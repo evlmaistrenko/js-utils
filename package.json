@@ -8,7 +8,8 @@
 	"scripts": {
 		"docs": "npm run docs --ws --if-present",
 		"lint": "npx --no -- eslint",
-		"pretest": "npm run build --ws --if-present",
+		"build": "npm run build --ws --if-present",
+		"pretest": "npm run build",
 		"test": "npm run test --ws --if-present",
 		"prepare": "husky"
 	},
@@ -31,9 +32,7 @@
 	},
 	"homepage": "https://github.com/evlmaistrenko/js-utils#readme",
 	"type": "module",
-	"workspaces": [
-		"packages/*"
-	],
+	"workspaces": ["packages/*"],
 	"devDependencies": {
 		"@commitlint/cli": "^19.6.0",
 		"@commitlint/config-conventional": "^19.6.0",

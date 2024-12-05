@@ -7,7 +7,7 @@ on:
     types: [closed]
 
 jobs:
-  publish-npm:
+  test:
     if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'release')
     runs-on: ubuntu-latest
     env:
@@ -20,7 +20,23 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm test
-      - run: npm shrinkwrap --production
+
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - run: npm run build
+      - run: rm -rf node_modules/
+      - run: rm package-lock.json
+      - run: npm shrinkwrap --omit=dev
       - name: Publish utils
         run: npm publish --access=public
       - name: Publish fetch
