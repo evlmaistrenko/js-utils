@@ -1,5 +1,7 @@
 # JS-utils
 
+[![NPM Version](https://img.shields.io/npm/v/%40evlmaistrenko%2Futils)](https://www.npmjs.com/package/@evlmaistrenko/utils)
+
 JS utils for better life.
 
 ## Packages
