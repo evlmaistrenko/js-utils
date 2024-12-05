@@ -1,6 +1,6 @@
 {
 	"name": "@evlmaistrenko/utils",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "JS utils for better life",
 	"exports": {
 		"./fetch": "./packages/fetch/dist/index.js"
