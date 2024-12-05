@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/evlmaistrenko/js-utils/compare/utils-v1.1.0...utils-v1.1.1) (2024-12-05)
+
+
+### Bug Fixes
+
+* link to npm fixed in docs ([174b277](https://github.com/evlmaistrenko/js-utils/commit/174b2777d5c0e86fa208c91e8d3b02fdc4f8f65c))
+
 ## [1.1.0](https://github.com/evlmaistrenko/js-utils/compare/utils-v1.0.4...utils-v1.1.0) (2024-12-05)
 
 
