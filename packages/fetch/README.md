@@ -1,6 +1,6 @@
 # @evlmaistrenko/utils-fetch
 
-[![NPM Version](https://img.shields.io/npm/v/%40evlmaistrenko%2Futils-fetch)](https://www.npmjs.com/package/@evlmaistrenko/utils)
+[![NPM Version](https://img.shields.io/npm/v/%40evlmaistrenko%2Futils-fetch)](https://www.npmjs.com/package/@evlmaistrenko/utils-fetch)
 
 Utilities for [FetchAPI](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 .
