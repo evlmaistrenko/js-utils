@@ -18,9 +18,9 @@ jobs:
         with:
           node-version: latest
           registry-url: https://registry.npmjs.org/
-      - run: npm shrinkwrap
       - run: npm ci
       - run: npm test
+      - run: npm shrinkwrap --production
       - name: Publish utils
         run: npm publish --access=public
       - name: Publish fetch

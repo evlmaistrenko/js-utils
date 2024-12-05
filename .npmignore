@@ -1,5 +1,5 @@
-.github
-.husky
+.github/
+.husky/
 .prettierignore
 .release-please-manifest.json
 commitlint.config.js
@@ -7,3 +7,8 @@ eslint.config.js
 lint-staged.config.js
 prettier.config.js
 release-please-config.json
+
+packages/fetch/src/
+packages/fetch/test/
+packages/fetch/tsconfig.json
+packages/fetch/typedoc.json
