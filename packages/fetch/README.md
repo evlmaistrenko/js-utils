@@ -12,7 +12,8 @@ npm i @evlmaistrenko/utils-fetch
 ```javascript
 import * as fetchUtils from "@evlmaistrenko/utils-fetch";
 
-//...
+// Check for error
+await fetch("<some-url>").then(fetchUtils.ResponseError.check);
 ```
 
 ## Api docs
