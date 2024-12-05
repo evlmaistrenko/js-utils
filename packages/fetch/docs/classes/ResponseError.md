@@ -36,7 +36,7 @@ Corresponded response
 
 #### Defined in
 
-[response-error.ts:3](https://github.com/evlmaistrenko/js-utils/blob/286670a5d1bfff7931ee0ca26240a35deec0afa5/packages/fetch/src/response-error.ts#L3)
+[response-error.ts:3](https://github.com/evlmaistrenko/js-utils/blob/71180528002bc2c31ceacaa99620003a0ef86378/packages/fetch/src/response-error.ts#L3)
 
 ## Properties
 
@@ -48,7 +48,7 @@ Corresponded response
 
 #### Defined in
 
-[response-error.ts:5](https://github.com/evlmaistrenko/js-utils/blob/286670a5d1bfff7931ee0ca26240a35deec0afa5/packages/fetch/src/response-error.ts#L5)
+[response-error.ts:5](https://github.com/evlmaistrenko/js-utils/blob/71180528002bc2c31ceacaa99620003a0ef86378/packages/fetch/src/response-error.ts#L5)
 
 ## Methods
 
@@ -82,4 +82,4 @@ If there is an error
 
 #### Defined in
 
-[response-error.ts:19](https://github.com/evlmaistrenko/js-utils/blob/286670a5d1bfff7931ee0ca26240a35deec0afa5/packages/fetch/src/response-error.ts#L19)
+[response-error.ts:19](https://github.com/evlmaistrenko/js-utils/blob/71180528002bc2c31ceacaa99620003a0ef86378/packages/fetch/src/response-error.ts#L19)
