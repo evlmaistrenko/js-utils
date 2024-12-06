@@ -43,3 +43,6 @@ jobs:
       - name: Publish fetch
         continue-on-error: true
         run: npm publish -w packages/fetch --access=public
+      - name: Publish mongomq
+        continue-on-error: true
+        run: npm publish -w packages/mongomq --access=public

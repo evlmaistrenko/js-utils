@@ -3,7 +3,8 @@
 	"version": "1.1.1",
 	"description": "JS utils for better life",
 	"exports": {
-		"./fetch": "./packages/fetch/dist/index.js"
+		"./fetch": "./packages/fetch/dist/index.js",
+		"./mongomq": "./packages/mongomq/dist/index.js"
 	},
 	"scripts": {
 		"docs": "npm run docs --ws --if-present",
@@ -32,9 +33,7 @@
 	},
 	"homepage": "https://github.com/evlmaistrenko/js-utils#readme",
 	"type": "module",
-	"workspaces": [
-		"packages/*"
-	],
+	"workspaces": ["packages/*"],
 	"devDependencies": {
 		"@commitlint/cli": "^19.6.0",
 		"@commitlint/config-conventional": "^19.6.0",
