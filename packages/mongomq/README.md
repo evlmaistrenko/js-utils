@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/%40evlmaistrenko%2Futils-mongomq)](https://www.npmjs.com/package/@evlmaistrenko/utils-mongomq)
 
-Simple MQ using MongoDB.
+Simple MQ using [MongoDB](https://www.mongodb.com/).
 
 ## Usage
 
