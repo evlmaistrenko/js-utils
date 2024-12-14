@@ -15,7 +15,31 @@ npm i @evlmaistrenko/utils-fetch
 import * as fetchUtils from "@evlmaistrenko/utils-fetch";
 
 // Check for error
-await fetch("<some-url>").then(fetchUtils.ResponseError.check);
+try {
+  await fetch("<some-url>").then((response) =>
+    fetchUtils.StringError.check(response),
+  );
+} catch (error) {
+  if (!(error instanceof fetchUtils.ResponseError)) throw error;
+  console.log(error.response.status, error.parsed?.message);
+}
+```
+
+### Extending `ResponseError`
+
+Assuming that your response body contains comma-separated list of errors.
+
+```typescript
+import * as fetchUtils from "@evlmaistrenko/utils-fetch";
+
+class MyResponseError extends fetchUtils.ResponseErrorBase<{
+  errors: string[];
+}> {
+  async parse() {
+    const json = await this.response.json();
+    this.parsedValue = json.errors.split(", ");
+  }
+}
 ```
 
 ## Api docs

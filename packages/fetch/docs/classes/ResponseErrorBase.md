@@ -2,21 +2,29 @@
 
 ---
 
-[@evlmaistrenko/utils-fetch](../README.md) / ResponseError
+[@evlmaistrenko/utils-fetch](../README.md) / ResponseErrorBase
 
-# Class: ResponseError
+# Class: `abstract` ResponseErrorBase\<TParsed\>
 
-Implementation with some basic parsing
+Represents error of `fetch` response
 
 ## Extends
 
-- [`ResponseErrorBase`](ResponseErrorBase.md)\<[`TParsedMessage`](../type-aliases/TParsedMessage.md)\>
+- `Error`
+
+## Extended by
+
+- [`ResponseError`](ResponseError.md)
+
+## Type Parameters
+
+• **TParsed**
 
 ## Constructors
 
-### new ResponseError()
+### new ResponseErrorBase()
 
-> **new ResponseError**(`response`): [`ResponseError`](ResponseError.md)
+> **new ResponseErrorBase**\<`TParsed`\>(`response`): [`ResponseErrorBase`](ResponseErrorBase.md)\<`TParsed`\>
 
 #### Parameters
 
@@ -28,11 +36,11 @@ Corresponded response
 
 #### Returns
 
-[`ResponseError`](ResponseError.md)
+[`ResponseErrorBase`](ResponseErrorBase.md)\<`TParsed`\>
 
-#### Inherited from
+#### Overrides
 
-[`ResponseErrorBase`](ResponseErrorBase.md).[`constructor`](ResponseErrorBase.md#constructors)
+`Error.constructor`
 
 #### Defined in
 
@@ -42,13 +50,9 @@ Corresponded response
 
 ### parsedValue?
 
-> `protected` `optional` **parsedValue**: [`TParsedMessage`](../type-aliases/TParsedMessage.md)
+> `protected` `optional` **parsedValue**: `TParsed`
 
 Store for parsed response body
-
-#### Inherited from
-
-[`ResponseErrorBase`](ResponseErrorBase.md).[`parsedValue`](ResponseErrorBase.md#parsedvalue)
 
 #### Defined in
 
@@ -61,10 +65,6 @@ Store for parsed response body
 > `readonly` **response**: `Response`
 
 Corresponded response
-
-#### Inherited from
-
-[`ResponseErrorBase`](ResponseErrorBase.md).[`response`](ResponseErrorBase.md#response)
 
 #### Defined in
 
@@ -84,10 +84,6 @@ Parsed response body. In general available only after executing `this.parse`
 
 `undefined` \| `TParsed`
 
-#### Inherited from
-
-[`ResponseErrorBase`](ResponseErrorBase.md).[`parsed`](ResponseErrorBase.md#parsed)
-
 #### Defined in
 
 [response-error.ts:34](https://github.com/evlmaistrenko/js-utils/blob/d97d1004096313b64ca27d2104133f55e1be59a5/packages/fetch/src/response-error.ts#L34)
@@ -96,21 +92,17 @@ Parsed response body. In general available only after executing `this.parse`
 
 ### parse()
 
-> `protected` **parse**(): `Promise`\<`void`\>
+> `abstract` `protected` **parse**(): `Promise`\<`void`\>
 
-Parses text or json body
+Parses response body
 
 #### Returns
 
 `Promise`\<`void`\>
 
-#### Overrides
-
-[`ResponseErrorBase`](ResponseErrorBase.md).[`parse`](ResponseErrorBase.md#parse)
-
 #### Defined in
 
-[response-error.ts:47](https://github.com/evlmaistrenko/js-utils/blob/d97d1004096313b64ca27d2104133f55e1be59a5/packages/fetch/src/response-error.ts#L47)
+[response-error.ts:39](https://github.com/evlmaistrenko/js-utils/blob/d97d1004096313b64ca27d2104133f55e1be59a5/packages/fetch/src/response-error.ts#L39)
 
 ---
 
@@ -143,10 +135,6 @@ Whether to parse response body
 ```ts
 await fetch("<some-url>").then((error) => ResponseError.check(error));
 ```
-
-#### Inherited from
-
-[`ResponseErrorBase`](ResponseErrorBase.md).[`check`](ResponseErrorBase.md#check)
 
 #### Defined in
 
